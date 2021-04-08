@@ -234,3 +234,61 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+h1, h2, h3, h4, a, p, button, ul, li, ol, form, fieldset, input, label {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F9F5F2;
+  color: #4E4F4F;
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: clamp(1.6rem, 2vw, 2.4rem);
+  text-transform: lowercase;
+  letter-spacing: 2px;
+}
+
+.wrapper {
+  width: 85%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 25px 0;
+}
+
+.cs-header {
+  background-image: url("../assets/landing-page-01.png");
+}
+
+.logo {
+  text-align: center;
+  padding: 30px;
+}
+
+.logo img {
+  width: 230px;
+}

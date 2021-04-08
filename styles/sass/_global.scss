@@ -1,0 +1,26 @@
+// global styles
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $background;
+    color: $black;
+
+    font-family: $font;
+    font-size: clamp(1.6rem, 2vw, 2.4rem);
+    text-transform: lowercase;
+    letter-spacing: 2px;
+}
+
+.wrapper {
+    width: 85%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 25px 0;
+}

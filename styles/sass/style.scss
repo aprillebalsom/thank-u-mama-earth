@@ -6,10 +6,23 @@ $orange: #EE9862;
 $yellow: #FFCF66;
 $green: #89B692;
 $blue: #79ACD1;
+$black: #4E4F4F;
 
-// fonts
-$font: #4E4F4F;
+// font
+$font: 'Sorts Mill Goudy', serif;
+
+//mixins
+@mixin custom-h1($color, $size, $spacing) {
+    color: $color;
+    font-family: $primary-font;
+    font-size: $size;
+    font-weight: bold;
+    line-height: 58px;
+    letter-spacing: $spacing;
+}
 
 
 // importing partials
 @import 'setup';
+@import 'global';
+@import 'coming-soon';

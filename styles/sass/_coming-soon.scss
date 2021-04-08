@@ -1,15 +1,55 @@
 // landing page styles
 .cs-header {
-    background-image: url('../assets/landing-page-01.png');
+    background-image: url('./assets/landing-page-01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+
+    height: 100vh;
+}
+
+h1 {
+    @include custom-h1(clamp(4rem, 4.5vw, 8rem));
+    font-weight: lighter;
+    padding-bottom: 10px;
 }
 
 .logo {
 
     text-align: center;
 
-    padding: 30px;
+    height: 10vh;
+    padding-top: 40px;
 
     img {
-        width: 230px;
+        width: 250px;
+    }
+}
+
+
+.cs-header-text {
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+        width: 60%;
+        padding-bottom: 20px;
+    }
+}
+
+.socials {
+    color: $background;
+    align-self: flex-end;
+    position: relative;
+    bottom: -130px;
+    display: flex;
+    justify-content: center;
+
+    a {
+        padding: 5px;
+        margin: 0 5px;
     }
 }

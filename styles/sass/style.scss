@@ -12,15 +12,23 @@ $black: #4E4F4F;
 $font: 'Sorts Mill Goudy', serif;
 
 //mixins
-@mixin custom-h1($color, $size, $spacing) {
-    color: $color;
-    font-family: $primary-font;
+@mixin custom-h1($size) {
+    color: $black;
+    font-family: $font;
     font-size: $size;
-    font-weight: bold;
-    line-height: 58px;
-    letter-spacing: $spacing;
 }
 
+@mixin custom-h2($size) {
+    color: $black;
+    font-family: $font;
+    font-size: $size;
+}
+
+@mixin custom-h3($size) {
+    color: $black;
+    font-family: $font;
+    font-size: $size;
+}
 
 // importing partials
 @import 'setup';

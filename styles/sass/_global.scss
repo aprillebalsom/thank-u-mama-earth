@@ -24,3 +24,46 @@ body {
 section {
     padding: 25px 0;
 }
+
+// highlights
+
+.highlight-r {
+    background-image: url('./assets/highlight-red.png');
+}
+
+.highlight-o {
+    background-image: url('./assets/highlight-orange.png');
+}
+
+.highlight-y {
+    background-image: url('./assets/highlight-yellow.png');
+}
+
+.highlight-g {
+    background-image: url('./assets/highlight-green.png');
+}
+
+.highlight-b {
+    background-image: url('./assets/highlight-blue.png');
+}
+
+.highlight {
+    font-style: normal;
+    background-repeat: no-repeat;
+    background-size: 100% 70%;
+    background-position: 50%;
+    padding: 5px;
+}
+
+// button styles
+
+.square-btn {
+    text-align: center;
+
+    border: .5px solid $black;
+
+    padding: 15px 20px;
+    margin: 20px 0;
+    width: 200px;
+}
+

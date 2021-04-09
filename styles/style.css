@@ -281,6 +281,30 @@ section {
   padding: 25px 0;
 }
 
+.emphasis {
+  font-style: italic;
+}
+
+.red {
+  color: #F85F5F;
+}
+
+.orange {
+  color: #EE9862;
+}
+
+.yellow {
+  color: #FFCF66;
+}
+
+.green {
+  color: #89B692;
+}
+
+.blue {
+  color: #79ACD1;
+}
+
 .highlight-r {
   background-image: url("./assets/highlight-red.png");
 }
@@ -314,7 +338,13 @@ section {
   border: 0.5px solid #4E4F4F;
   padding: 15px 20px;
   margin: 20px 0;
-  width: 200px;
+  width: clamp(180px, 3vw, 240px);
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.square-btn:hover, .square-btn:focus {
+  color: #c5bebe;
 }
 
 .cs-header {
@@ -379,4 +409,132 @@ h1 {
 .socials a {
   padding: 5px;
   margin: 0 5px;
+}
+
+@media (max-width: 1090px) {
+  .cs-header {
+    height: 65vh;
+  }
+  .cs-header-text {
+    height: 50vh;
+  }
+  .socials {
+    position: static;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    color: #4E4F4F;
+  }
+}
+
+@media (max-width: 480px) {
+  .cs-header-text p {
+    width: 100%;
+  }
+  .cs-header-text .square-btn {
+    margin-top: 0;
+  }
+}
+
+.join {
+  border-top: 0.5px solid #4E4F4F;
+  border-bottom: 0.5px solid #4E4F4F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.join-text {
+  padding: 15px 0;
+  width: 60%;
+}
+
+.join-text h2 {
+  color: #4E4F4F;
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: clamp(2.5rem, 3vw, 3.5rem);
+  font-weight: lighter;
+  padding-bottom: 10px;
+}
+
+.join-btn {
+  width: 40%;
+  text-align: right;
+}
+
+.join-btn a {
+  width: 350px;
+}
+
+@media (max-width: 768px) {
+  .join {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .join-text,
+  .join-btn {
+    width: 100%;
+  }
+  .join-btn {
+    text-align: left;
+    margin: 20px 0;
+  }
+}
+
+.message {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.message h2 {
+  color: #4E4F4F;
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: clamp(2.5rem, 3vw, 3.5rem);
+  font-weight: lighter;
+  width: 40%;
+}
+
+.message p {
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  .message {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .message h2,
+  .message p {
+    width: 100%;
+  }
+  .message h2 {
+    padding-bottom: 20px;
+  }
+}
+
+.cs-footer img {
+  position: relative;
+  bottom: -10px;
+  right: 0;
+  left: 0;
 }

@@ -348,11 +348,16 @@ section {
 }
 
 .cs-header {
-  background-image: url("./assets/landing-page-01.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom center;
   height: 100vh;
+  position: relative;
+}
+
+.cs-header .bck-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -10;
 }
 
 h1 {
@@ -413,7 +418,7 @@ h1 {
 
 @media (max-width: 1090px) {
   .cs-header {
-    height: 65vh;
+    height: 60vh;
   }
   .cs-header-text {
     height: 50vh;
@@ -431,7 +436,7 @@ h1 {
     width: 100%;
   }
   .cs-header-text .square-btn {
-    margin-top: 0;
+    display: none;
   }
 }
 
